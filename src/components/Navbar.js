@@ -1,13 +1,19 @@
 import {Navbar,Container,Nav} from "react-bootstrap"
 
-const navbar = () => {
+const NavigationBar = () => {
     return (
-        <Navbar bg-dark>
+        <div>
+        <Navbar>
             <Container>
+                <Navbar.Brand>Nonton Film Kuy</Navbar.Brand>
+                <Nav>
+                <Nav.Link>Most Viewed</Nav.Link>
                 <Nav.Link>Trending</Nav.Link>
+                </Nav>
             </Container>
         </Navbar>
+        </div>
     )
 }
 
-export default navbar
+export default NavigationBar
